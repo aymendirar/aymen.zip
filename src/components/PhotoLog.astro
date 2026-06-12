@@ -12,7 +12,6 @@ const { year } = Astro.props;
 const filteredByYear = photos.filter((photo) =>
   year ? extractYear(photo.sq) === year : true,
 );
-
 ---
 
 <script>
